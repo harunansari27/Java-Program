@@ -1,5 +1,7 @@
 package Recursion.Array;
 
+import java.util.ArrayList;
+
 public class LinearSearch {
     
     public static void main(String[] args) {
@@ -14,6 +16,9 @@ public class LinearSearch {
 
         int index3 = arr.length -1 ;
         System.out.println(searchLastIndex(arr, target, index3));
+
+        findAllIndex(arr , target , 0 ) ;
+        System.out.println("At  the place of "+list+" Target is found." );
         
     }
 
@@ -58,5 +63,20 @@ public class LinearSearch {
         return searchLastIndex(arr , target , index3-1 ) ;
 
        
+    }
+
+
+    static ArrayList<Integer> list = new ArrayList<>() ;
+
+    static void findAllIndex(int[] arr , int target , int index) {
+        if(index == arr.length) {
+            return ;
+        }
+
+        if(arr[index] == target) {
+            list.add(index) ;
+        }
+
+        findAllIndex(arr , target , index+1 ) ;
     }
 }
