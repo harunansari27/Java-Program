@@ -1,3 +1,4 @@
+package Basic;
 // TicToe.java// A simple Tic Tac Toe game in Java where a human plays against a basic AI.
 // The AI uses a simple strategy to either win, block the human player, or make a random move.
 
