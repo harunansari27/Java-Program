@@ -4,9 +4,10 @@ public class LocalVar {
 
     public static void main(String[] args) {
         int a = 10 ;
-        int b  ;
+     //   int b  ;
+        int b = 20 ; 
 
-        System.out.println("Value of a: " + a + "and "+ "Value of b: " + b); // Error: Variable 'b' might not have been initialized
+        System.out.println("Value of a: " + a + " and "+ "Value of b: " + b); // Error: Variable 'b' might not have been initialized
     }
     
 }
