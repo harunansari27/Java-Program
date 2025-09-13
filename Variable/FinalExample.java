@@ -4,7 +4,7 @@ public class FinalExample {
      final static int a = 10 ; // Final Variable
     public static void main(String[] args) {
        
-         a = 20 ; // Error: Cannot assign a value to final variable 'a'
+        // a = 20 ; // Error: Cannot assign a value to final variable 'a'
         System.out.println("Value of a: " + a); // Output: Value of a: 10
         System.out.println("Value of a: " + FinalExample.a); // Output: Value of a: 10
 
