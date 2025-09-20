@@ -1,4 +1,4 @@
-package Recursion.Array;
+package Recursion.Array.Recursion.Array;
 
 import java.util.ArrayList;
 
