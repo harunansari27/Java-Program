@@ -1,4 +1,4 @@
-package Recursion.Array.Recursion.Array;
+package Recursion.Array;
 
 public class Hello {
 
