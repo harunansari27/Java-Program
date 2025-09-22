@@ -25,6 +25,8 @@ class Students {
     Stud harun = new Stud();
 
     System.out.println(harun);
+    System.out.println(harun.rno);
+    System.out.println(harun.name);
 
     }
 }
