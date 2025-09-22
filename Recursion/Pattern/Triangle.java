@@ -16,6 +16,7 @@ public class Triangle {
         }
 
         if (cols < rows) {
+
             System.out.print("* ");
             triangle(rows, cols + 1);
 
@@ -31,6 +32,7 @@ public class Triangle {
     static void triangle2(int rows, int cols) {
         if (rows == 0) {
             return;
+
         }
 
         if (cols < rows) {
@@ -42,5 +44,7 @@ public class Triangle {
             System.out.println();
 
         }
+
     }
+
 }
