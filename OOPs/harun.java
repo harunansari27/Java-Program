@@ -6,4 +6,10 @@
 
 class harun {
 
+    static class name {
+
+        public name() {
+        }
+    }
+
 }
