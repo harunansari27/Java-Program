@@ -24,6 +24,7 @@ class Students {
 
     Stud[] students = new Stud[5];
 
+    // Object Creation of Class Stud 
     Stud harun = new Stud(1 , "Harun", 90.5f, "Deoria", "Uttar Pradesh");
     Stud rahul = new Stud(2 , "Rahul", 85.0f, "Gorakhpur", "Uttar Pradesh");
     Stud ankit = new Stud(3 , "Ankit", 78.5f, "Lucknow", "Uttar Pradesh");
@@ -32,6 +33,8 @@ class Students {
     // harun.name = "Harun";   
     // harun.marks = 90.5f;
 
+
+    
     System.out.println("---------------------------------------");
     System.out.println(harun);
     System.out.println("1. Roll No Of Student: "+harun.rno);
@@ -41,6 +44,7 @@ class Students {
     System.out.println("5. State Of Student: "+harun.state);
     System.out.println("---------------------------------------");
 
+    // Print all students details
     System.out.println("================== All Students Details =================");
     System.out.println(rahul);
     System.out.println(ankit);
@@ -59,15 +63,16 @@ class Stud {
     String city ;
     String state ;
 
+    // Creation of Constructor
       Stud(int rno, String name, float marks, String city, String state)  {
       this.rno = rno;
       this.name = name;
       this.marks = marks;
       this.city = city;
       this.state = state; 
-
     }
 
+    // Override toString() method to print object details
        public String toString() {
         return "Roll No: " + rno + ", Name: " + name + ", Marks: " + marks +
                ", City: " + city + ", State: " + state;
