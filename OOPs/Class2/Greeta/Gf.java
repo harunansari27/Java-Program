@@ -1,6 +1,6 @@
-package Class2;
+package Class2.Greeta;
 
-import static Class1.Love.Loveu;
+import static Class2.Greetb.Love.Loveu;
 
 public class Gf {
 

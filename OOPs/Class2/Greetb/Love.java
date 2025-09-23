@@ -1,4 +1,4 @@
-package Class1;
+package Class2.Greetb;
 
 public class Love {
         public static void Loveu() {
