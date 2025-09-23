@@ -1,3 +1,4 @@
+package Class1;
 class WrapperClass {
       public static void main(String[] args) {
             int a = 10;

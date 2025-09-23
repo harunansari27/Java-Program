@@ -1,3 +1,4 @@
+package Class1;
 
 class FinalKey {
 

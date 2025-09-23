@@ -1,4 +1,4 @@
-package Recursion.Pattern;
+
 
 public class Triangle {
 
@@ -6,6 +6,7 @@ public class Triangle {
 
         triangle(4, 0);
         triangle2(4, 0);
+
 
     }
 

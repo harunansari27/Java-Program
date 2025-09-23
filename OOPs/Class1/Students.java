@@ -1,3 +1,4 @@
+package Class1;
 class Students {
 
     String[] name   = new String[5];
@@ -22,7 +23,7 @@ class Students {
 
    public static void main(String[] args) {
 
-    Stud[] students = new Stud[5];
+   // Stud[] students = new Stud[5];
 
     // Object Creation of Class Stud 
     Stud harun = new Stud(1 , "Harun", 90.5f, "Deoria", "Uttar Pradesh");
