@@ -1,8 +1,9 @@
 // package Recursion.Pattern;
 
 public class BubbleSort {
+
     public static void main(String[] args) {
-        int arr[] = { 5, 4, 3, 2, 1 };
+        int arr[] = {5, 4, 3, 2, 1};
         bubbleSort(arr, arr.length - 1, 0);
         printArr(arr);
     }
@@ -10,7 +11,9 @@ public class BubbleSort {
     static void bubbleSort(int arr[], int r, int c) {
         // base case
         if (r == 0) {
+
             return;
+
         }
         if (c < r) {
             if (arr[c] > arr[c + 1]) {
