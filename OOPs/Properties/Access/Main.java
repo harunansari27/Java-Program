@@ -11,8 +11,5 @@ public class Main {
     obj.getNum() ;
     obj.setNum(10);
     System.out.println(obj.getNum());
-
-
-
   }
 }
