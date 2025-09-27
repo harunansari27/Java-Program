@@ -26,7 +26,9 @@ public class ObjectDemo {
   @Override
   public int hashCode() {
     // TODO Auto-generated method stub
-    return super.hashCode();
+    // return super.hashCode();
+     return num;
+     // 5 , 5 similar hashcode
   }
 
 
