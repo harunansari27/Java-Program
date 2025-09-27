@@ -4,10 +4,12 @@ public class ObjectDemo {
 
 
   int num ;
+  float f ;
 
   // Constructor
-  public ObjectDemo(int num){
+  public ObjectDemo(int num , float f){
     this.num = num ;
+    this.f = f ;
   }
   
 // convert into string
@@ -36,7 +38,7 @@ public class ObjectDemo {
   @Override
   public boolean equals(Object obj) {
     // TODO Auto-generated method stub
-    return super.equals(obj);
+    return this.num == ((ObjectDemo)obj).num ;
   }
   
   @Override
@@ -53,11 +55,33 @@ public class ObjectDemo {
     // System.out.println(obj2.hashCode());
     //Output:- 918221580 , 2055281021
 
-      ObjectDemo obj = new ObjectDemo(5) ;
-    ObjectDemo obj2 =  obj  ;
-    System.out.println(obj.hashCode());
-    System.out.println(obj2.hashCode());
+    //   ObjectDemo obj = new ObjectDemo(5) ;
+    // ObjectDemo obj2 =  obj  ;
+    // System.out.println(obj.hashCode());
+    // System.out.println(obj2.hashCode());
     //Output :- 918221580 , 918221580
+
+
+      ObjectDemo obj = new ObjectDemo(5 , 8.9f) ;
+      ObjectDemo obj2 = new ObjectDemo(5,7.9f) ;
+
+      if ((obj).equals(obj2)) {
+        System.out.println("Equal .Equals method");
+      } else {
+        System.out.println("Not Equal");
+        
+      }
+
+      if(obj == obj2){
+        System.out.println("Equal using comparision operator");
+
+        
+      }
+        else{
+          System.out.println("Not Equal comparision operator");
+        
+
   }
 
+}
 }
