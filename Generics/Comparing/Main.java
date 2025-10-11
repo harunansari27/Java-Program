@@ -16,13 +16,17 @@ public class Main {
     Students[] student = {harun, kyum, arif, zia, sami};
 
     System.out.println(Arrays.toString(student));
-    Arrays.sort(student , new Comparator<Students>() {
-      @Override
-      public int compare(Students o1, Students o2) {
-        return (int)(o1.percentage - o2.percentage);
-      }
+    // Arrays.sort(student , new Comparator<Students>() {
+    //   @Override
+    //   public int compare(Students o1, Students o2) {
+    //     return (int)(o1.percentage - o2.percentage);
+    //   }
       
-    });
+    // });
+
+    // Anonymous class using lambda expression
+    Arrays.sort(student, (o1, o2) -> (int)(o1.percentage - o2.percentage));
+    
     System.out.println(Arrays.toString(student)); 
 
     // if(harun.compareTo(kyum) < 0){
