@@ -1,7 +1,6 @@
 package Generics.Comparing;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class Main {
 
@@ -26,7 +25,7 @@ public class Main {
 
     // Anonymous class using lambda expression
     Arrays.sort(student, (o1, o2) -> (int)(o1.percentage - o2.percentage));
-    
+
     System.out.println(Arrays.toString(student)); 
 
     // if(harun.compareTo(kyum) < 0){
