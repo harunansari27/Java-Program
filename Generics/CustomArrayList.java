@@ -74,7 +74,7 @@ public class CustomArrayList {
   list.add(20);
   list.add(30);
   list.add(40);
-
+  
   System.out.println(list);
   System.out.println(list.size());
   list.remove();
