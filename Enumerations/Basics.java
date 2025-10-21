@@ -8,7 +8,7 @@ public class Basics {
       WEDNESDAY,
       THURSDAY,
       FRIDAY,
-      SATURDAY
+      SATURDAY ; 
       // these are enum constant 
       // public , static and final by default
       // can be accessed using Day.SUNDAY, Day.MONDAY etc.
@@ -18,7 +18,7 @@ public class Basics {
    }
 
    enum Color {
-      RED, GREEN, BLUE
+      RED, GREEN, BLUE ; 
    }
 
    enum Months {
@@ -33,7 +33,18 @@ public class Basics {
       SEPTEMBER,
       OCTOBER,
       NOVEMBER,
-      DECEMBER
+      DECEMBER  ; 
+
+      Months() {
+
+         System.out.println("Constructor called for : " + this);
+         // constructor
+         // enum constructors are private by default
+         // cannot be public or protected
+         // internally : public static final Months JANUARY = new Months();
+
+        
+      }
 
 
   
@@ -46,8 +57,8 @@ public class Basics {
       //    System.out.println(mon);
       // }
 
-      System.out.println(month);
-       System.out.println(month.ordinal()); // prints the position of the enum constant (starting from 0)
+      // System.out.println(month);
+      // System.out.println(month.ordinal()); // prints the position of the enum constant (starting from 0)
    }
 
 }
