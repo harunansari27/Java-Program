@@ -21,7 +21,7 @@ public class Basics {
       RED, GREEN, BLUE ; 
    }
 
-   enum Months {
+   enum Months implements A {
       JANUARY,
       FEBRUARY,
       MARCH,
@@ -42,16 +42,20 @@ public class Basics {
          // enum constructors are private by default
          // cannot be public or protected
          // internally : public static final Months JANUARY = new Months();
-
-        
       }
 
+      @Override
+      public void hello() {
+         System.out.println("Hello from Months enum");  
 
+      }
   
    }
 
    public static void main(String[] args) {
       Months month = Months.MARCH;
+      month.hello();
+      System.out.println(month.valueOf("MARCH")); // returns the enum constant of the specified string value  
     
       // for (Months  mon : Months.values()) {
       //    System.out.println(mon);
