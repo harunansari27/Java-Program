@@ -3,6 +3,7 @@ package Collections;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
 
 public class Main {
   public static void main(String[] args) {
@@ -15,5 +16,13 @@ public class Main {
     System.out.println("Second List " + anotherList);
     myList.addAll(anotherList);
     System.out.println("First List " + myList);
+
+
+    List<Integer> vector = new Vector<>() ;
+    vector.add(100);
+    vector.add(200);
+    vector.add(300);
+    System.out.println("Vector List " + vector);
+
   }
 }
